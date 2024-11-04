@@ -1697,7 +1697,7 @@ section,
 }
 
 
-.contact .submit-button button[type=submit] {
+.contact .form-group .submit-button [type=submit] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1706,7 +1706,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .contact .php-email-form button[type=submit]:hover {
+.contact .form-group .submit-button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
