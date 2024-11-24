@@ -860,6 +860,15 @@ section,
   z-index: 3;
 }
 
+.hero .carousel-container_first {
+  display: flex; /* Arrange sections in a row */
+  align-items: flex-start; /* Align content at the top */
+  justify-content: space-between; /* Spread out sections evenly */
+  gap: 0; /* No extra gap needed; dividers act as separators */
+  border: 1px solid #ddd; /* Optional border around the container */
+  padding: 20px;
+}
+
 .hero .carousel-column {
   flex: 1; /* Each column takes equal width */
   padding: 10px; /* Add spacing inside the column */
