@@ -860,26 +860,26 @@ section,
   z-index: 3;
 }
 
-.hero .carousel-container-first {
-  display: flex; /* Arrange sections in a row */
-  align-items: flex-start; /* Align content at the top */
-  justify-content: space-between; /* Spread out sections evenly */
-  gap: 0; /* No extra gap needed; dividers act as separators */
-  border: 1px solid #ddd; /* Optional border around the container */
-  padding: 20px;
+.hero .three-columns {
+  display: flex; /* Arrange the columns horizontally */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Spread the columns evenly */
+  gap: 20px; /* Add space between columns */
+  margin-top: 20px; /* Add space above the 3-column section */
 }
 
-.hero .carousel-column {
-  flex: 1; /* Each column takes equal width */
-  padding: 10px; /* Add spacing inside the column */
-  text-align: center; /* Center-align text */
+.hero .column {
+  flex: 1; /* Equal width for all columns */
+  padding: 10px; /* Add padding inside each column */
+  text-align: center; /* Center the text */
 }
 
 .hero .vertical-divider {
-  width: 2px; /* Thickness of the vertical line */
-  background-color: #ccc; /* Gray color for the divider */
-  height: auto; /* Automatically adjusts height to match the content */
+  width: 2px; /* Set the width of the divider */
+  background-color: #ccc; /* Light gray color for the divider */
+  height: auto; /* Adjust height dynamically based on content */
 }
+
 
 
 
