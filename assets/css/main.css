@@ -860,6 +860,20 @@ section,
   z-index: 3;
 }
 
+.hero .carousel-column {
+  flex: 1; /* Each column takes equal width */
+  padding: 10px; /* Add spacing inside the column */
+  text-align: center; /* Center-align text */
+}
+
+.hero .vertical-divider {
+  width: 2px; /* Thickness of the vertical line */
+  background-color: #ccc; /* Gray color for the divider */
+  height: auto; /* Automatically adjusts height to match the content */
+}
+
+
+
 .hero h2 {
   margin-bottom: 30px;
   font-size: 48px;
