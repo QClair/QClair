@@ -865,7 +865,7 @@ section,
   display: flex; /* Arrange items in a horizontal row */
   flex-direction: row; /* Ensure columns are side by side */
   align-items: flex-start; /* Align items to the top */
-  margin-left: 50px;
+  margin-top: 100px;
   justify-content: space-between; /* Spread out columns evenly */
   gap: 20px; /* Add spacing between the columns */
   margin-top: 20px; /* Add spacing above the section */
@@ -879,7 +879,7 @@ section,
 
 .vertical-divider {
   width: 2px; /* Set width for the vertical line */
-  background-color: #ccc; /* Light gray color */
+  background-color: black; /* Light gray color */
   height: auto; /* Match the height of the content */
 }
 
