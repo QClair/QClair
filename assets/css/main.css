@@ -868,6 +868,7 @@ section,
   justify-content: space-between; /* Spread out columns evenly */
   gap: 20px; /* Add spacing between the columns */
   margin-top: 20px; /* Add spacing above the section */
+  margin-left: 30px;
 }
 
 .column {
