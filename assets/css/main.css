@@ -860,7 +860,7 @@ section,
   z-index: 3;
 }
 
-.hero .carousel-container_first {
+.hero .carousel-container-first {
   display: flex; /* Arrange sections in a row */
   align-items: flex-start; /* Align content at the top */
   justify-content: space-between; /* Spread out sections evenly */
