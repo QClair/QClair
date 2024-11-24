@@ -865,7 +865,7 @@ section,
   display: flex; /* Arrange items in a horizontal row */
   flex-direction: row; /* Ensure columns are side by side */
   align-items: flex-start; /* Align items to the top */
-  margin-top: 275px;
+  margin-left: 275px;
   justify-content: space-between; /* Spread out columns evenly */
   gap: 20px; /* Add spacing between the columns */
   margin-top: 20px; /* Add spacing above the section */
@@ -873,7 +873,7 @@ section,
 
 .column {
   flex: 1; /* Make all columns take equal space */
-  padding: 20px; /* Add padding inside each column */
+  padding: 50px; /* Add padding inside each column */
   text-align: center; /* Center the content of each column */
 }
 
