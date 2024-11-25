@@ -11,6 +11,8 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Playfair Display",  sans-serif;
@@ -803,6 +805,9 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.centered-paragraph {
+  text-align: center; /* Center the text horizontally */
+}
 .hero {
   padding: 0;
 }
@@ -859,6 +864,31 @@ section,
   flex-direction: column;
   z-index: 3;
 }
+
+
+
+.three-columns {
+  display: flex;
+  justify-content: center; /* Center the columns horizontally */
+  align-items: center;     /* Center the columns vertically */
+  text-align: center;  
+  padding-left: 120px    /* Center the text inside each column */
+}
+
+.column {
+  flex: 1; /* Ensure each column takes equal space */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.vertical-divider {
+  width: 2px; /* Set width for the vertical line */
+  background-color: white; /* Light gray color */
+  height: auto; /* Match the height of the content */
+}
+
+
+
+
 
 .hero h2 {
   margin-bottom: 30px;
