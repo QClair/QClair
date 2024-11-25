@@ -861,7 +861,7 @@ section,
 }
 
 
-.three-columns {
+.hero .three-columns {
   display: flex; /* Arrange items in a horizontal row */
   flex-direction: row; /* Ensure columns are side by side */
   align-items: flex-start; /* Align items to the top */
@@ -870,13 +870,13 @@ section,
   margin-top: 20px; /* Add spacing above the section */
 }
 
-.column {
+.hero .column {
   flex: 1; /* Make all columns take equal space */
   padding: 10px; /* Add padding inside each column */
   text-align: center; /* Center the content of each column */
 }
 
-.vertical-divider {
+.hero .vertical-divider {
   width: 2px; /* Set width for the vertical line */
   background-color: white; /* Light gray color */
   height: auto; /* Match the height of the content */
