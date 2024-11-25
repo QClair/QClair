@@ -63,7 +63,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-fontt
+  font-family: var(--default-font);
 }
 
 a {
@@ -859,7 +859,6 @@ section,
   flex-direction: column;
   z-index: 3;
 }
-
 
 .hero h2 {
   margin-bottom: 30px;
@@ -1697,21 +1696,6 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-
-.contact .form-group .submit-button [type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .form-group .submit-button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
-
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -1843,27 +1827,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-/*.starter-section {
- 
-}*/
-.send-button {
-  background-color: var(--default-color); /* Change this to your preferred color */
-  font-family: 'Roboto', sans-serif;
-  color: white; /* Text color */
-  border: none; /* Remove default border */
-  border-radius: 25px; /* Rounded corners */
-  padding: 10px 20px; /* Padding for a softer look */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth transition */
-}
-
-.send-button:hover {
-  background-color: var(--accent-color); /* Darker shade on hover */
-}
-.font-control {
-  font-family: 'Roboto', sans-serif; /* Use the default font-family */
-  font-size: 16px; /* Default font size, adjust as needed */
-  line-height: 1.5; /* Default line height for readability */
-  color: #333; /* Default text color */
+.starter-section {
+  /* Add your styles here */
 }
