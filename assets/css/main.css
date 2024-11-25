@@ -882,34 +882,6 @@ section,
   height: auto; /* Match the height of the content */
 }
 
-/* Tablet (medium screens) */
-@media (max-width: 768px) {
-
-  .three-columns {
-    flex-direction: column; /* Stack columns vertically */
-    align-items: flex-start; 
-  }
-
-  .columns {
-    width: 100%; /* Columns take full width */
-  }
-}
-
-/* Mobile (small screens) */
-@media (max-width: 480px) {
-  .three-columns {
-    padding: 10px;
-  }
-
-  .columns {
-    margin-bottom: 15px; /* Add spacing between stacked columns */
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
-}
-
-
-
-
 .hero h2 {
   margin-bottom: 30px;
   font-size: 48px;
