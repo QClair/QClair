@@ -885,7 +885,7 @@ section,
 /* Tablet (medium screens) */
 @media (max-width: 768px) {
 
-  .carousel-container {
+  .three-columns {
     flex-direction: column; /* Stack columns vertically */
     align-items: center; /* Center the columns */
   }
@@ -897,7 +897,7 @@ section,
 
 /* Mobile (small screens) */
 @media (max-width: 480px) {
-  .carousel-container {
+  .three-columns {
     padding: 10px;
   }
 
