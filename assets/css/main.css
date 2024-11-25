@@ -885,15 +885,16 @@ section,
 /* Tablet (medium screens) */
 @media (max-width: 768px) {
 
-  .three-columns {
+  .columns {
     width: 100%; /* Columns take full width */
   }
 }
 
 /* Mobile (small screens) */
 @media (max-width: 480px) {
+  
 
-  .three-columns {
+  .columns {
     margin-bottom: 15px; /* Add spacing between stacked columns */
     font-size: 14px; /* Adjust font size for smaller screens */
   }
