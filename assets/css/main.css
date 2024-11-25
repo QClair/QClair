@@ -885,6 +885,11 @@ section,
 /* Tablet (medium screens) */
 @media (max-width: 768px) {
 
+  .carousel-container {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center the columns */
+  }
+
   .columns {
     width: 100%; /* Columns take full width */
   }
@@ -892,7 +897,9 @@ section,
 
 /* Mobile (small screens) */
 @media (max-width: 480px) {
-  
+  .carousel-container {
+    padding: 10px;
+  }
 
   .columns {
     margin-bottom: 15px; /* Add spacing between stacked columns */
