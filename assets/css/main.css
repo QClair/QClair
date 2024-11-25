@@ -861,27 +861,6 @@ section,
 }
 
 
-.hero .three-columns {
-  display: flex; /* Arrange items in a horizontal row */
-  flex-direction: row; /* Ensure columns are side by side */
-  align-items: flex-start; /* Align items to the top */
-  justify-content: space-between; /* Spread out columns evenly */
-  gap: 20px; /* Add spacing between the columns */
-  margin-top: 20px; /* Add spacing above the section */
-}
-
-.hero .column {
-  flex: 1; /* Make all columns take equal space */
-  padding: 10px; /* Add padding inside each column */
-  text-align: center; /* Center the content of each column */
-}
-
-.hero .vertical-divider {
-  width: 2px; /* Set width for the vertical line */
-  background-color: white; /* Light gray color */
-  height: auto; /* Match the height of the content */
-}
-
 .hero h2 {
   margin-bottom: 30px;
   font-size: 48px;
