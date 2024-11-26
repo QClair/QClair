@@ -890,7 +890,8 @@ section,
   justify-content: flex-end;  /* Align the paragraph to the bottom */
   align-items: center;        /* Center the text horizontally (optional, if needed) */
   height: 100vh;              /* Make sure the parent container takes full viewport height */
-  text-align: center;         /* Center the text inside the paragraph */
+  text-align: center;          /* Center the text inside the paragraph */
+  margin-top: 150px;
 }
 
 
