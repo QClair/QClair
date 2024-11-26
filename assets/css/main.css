@@ -832,7 +832,7 @@ section,
 }
 
 .hero .carousel-item {
-  position: relative;
+  position:absolute;
   inset: 0;
   background-size: cover;
   background-position: center;
@@ -856,7 +856,7 @@ section,
 }
 
 .hero .carousel-container {
-  position: relative;
+  position: absolute;
   inset: 90px 64px 64px 64px;
   display: flex;
   justify-content: center;
@@ -886,12 +886,13 @@ section,
 }
 
 .quote1 {
-  position: absolute;
+  
   bottom: 10px; /* Position the quote 10px from the bottom */
   left: 50%;
   transform: translateX(-50%); /* Center the quote horizontally */
   font-style: italic; /* Optional for styling */
-  text-align: center; /* Ensure the text is centered */
+  text-align: center;/* Ensure the text is centered */
+  align-items: bottom;
   padding: 10px 20px;
   border-radius: 5px; /* Optional border radius */
 }
