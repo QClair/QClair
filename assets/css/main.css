@@ -886,12 +886,15 @@ section,
 }
 
 .quote1 {
-  display: flex;
-  justify-content: flex-end;  /* Align the paragraph to the bottom */
-  align-items: center;        /* Center the text horizontally (optional, if needed) */
-  height: 100vh;              /* Make sure the parent container takes full viewport height */
-  text-align: center;          /* Center the text inside the paragraph */
-  margin-top: 150px;
+  position: absolute;
+  bottom: 10px; /* Position the quote 10px from the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center the quote horizontally */
+  font-style: italic; /* Optional for styling */
+  text-align: center; /* Ensure the text is centered */
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Optional background for readability */
+  border-radius: 5px; /* Optional border radius */
 }
 
 
