@@ -832,7 +832,7 @@ section,
 }
 
 .hero .carousel-item {
-  position:absolute;
+  position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center;
@@ -885,9 +885,7 @@ section,
   height: auto; /* Match the height of the content */
 }
 
-.quote1 {
-  text-align: center;/* Ensure the text is centered */
-}
+
 
 
 
