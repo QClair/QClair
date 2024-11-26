@@ -856,7 +856,7 @@ section,
 }
 
 .hero .carousel-container {
-  position: absolute;
+  position: relative;
   inset: 90px 64px 64px 64px;
   display: flex;
   justify-content: center;
@@ -886,7 +886,7 @@ section,
 }
 
 .quote1 {
-  position: relative;
+  position: absolute;
   bottom: 10px; /* Position the quote 10px from the bottom */
   left: 50%;
   transform: translateX(-50%); /* Center the quote horizontally */
