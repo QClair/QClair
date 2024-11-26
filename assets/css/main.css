@@ -885,7 +885,11 @@ section,
   height: auto; /* Match the height of the content */
 }
 
-
+.quote1 {
+  display: flex;
+  justify-content: center; /* Center the columns horizontally */
+  text-align: center;    /* Center the text inside each column */
+}
 
 
 
