@@ -832,7 +832,7 @@ section,
 }
 
 .hero .carousel-item {
-  position: absolute;
+  position: relative;
   inset: 0;
   background-size: cover;
   background-position: center;
