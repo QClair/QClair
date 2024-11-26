@@ -886,15 +886,7 @@ section,
 }
 
 .quote1 {
-  
-  bottom: 10px; /* Position the quote 10px from the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Center the quote horizontally */
-  font-style: italic; /* Optional for styling */
   text-align: center;/* Ensure the text is centered */
-  align-items: bottom;
-  padding: 10px 20px;
-  border-radius: 5px; /* Optional border radius */
 }
 
 
