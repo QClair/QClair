@@ -887,8 +887,10 @@ section,
 
 .quote1 {
   display: flex;
-  justify-content: center; /* Center the columns horizontally */
-  text-align: center;    /* Center the text inside each column */
+  justify-content: flex-end;  /* Align the paragraph to the bottom */
+  align-items: center;        /* Center the text horizontally (optional, if needed) */
+  height: 100vh;              /* Make sure the parent container takes full viewport height */
+  text-align: center;         /* Center the text inside the paragraph */
 }
 
 
