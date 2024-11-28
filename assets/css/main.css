@@ -861,23 +861,15 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   z-index: 3;
 }
 
 
-.three-columns {
-  display: flex;
-  justify-content: center; /* Center the columns horizontally */
-  align-items: center;     /* Center the columns vertically */
-  text-align: center;  
-  padding-left: 120px    /* Center the text inside each column */
-}
 
-.column {
-  flex: 1; /* Ensure each column takes equal space */
-  padding: 20px; /* Add some padding for better spacing */
-}
+
+
 
 .vertical-divider {
   width: 2px; /* Set width for the vertical line */
@@ -1894,4 +1886,90 @@ section,
   font-size: 16px; /* Default font size, adjust as needed */
   line-height: 1.5; /* Default line height for readability */
   color: #333; /* Default text color */
+}
+
+
+.hover-item {
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-item:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background highlight */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+.hover-highlight {
+  color: #fff; /* Default text color */
+  transition: color 0.3s ease;
+}
+
+.hover-item:hover .hover-highlight {
+  color: #ffd700; /* Gold color when hovered */
+}
+
+/* Quote styling to appear on top of image */
+.quote-overlay {
+  position: absolute;
+  right: 385px; /* 20px from the right edge of the carousel */
+  bottom: 20px; /* 20px from the bottom edge of the carousel */
+  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+  color: #fff; /* White text */
+  padding: 15px; /* Padding around the text for better readability */
+  font-size: 1.25rem; /* Font size */
+  font-weight: italic; /* Font weight */
+  border-radius: 8px; /* Optional: rounded corners */
+  z-index: 2; /* Ensure the quote is above the image */
+  white-space: nowrap; /* Prevent wrapping of the text */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis if the text overflows */
+}
+
+.quote {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+/* Ensure the columns inside the carousel item take full width and align in a row */
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Ensure each column has a fixed size */
+.column {
+  flex: 0 0 33%;  /* Ensures each column takes up 1/3rd of the width */
+  position: relative; /* Needed for absolute positioning of hover elements */
+  padding: 20px;
+}
+
+/* Fix the size of the hover item box */
+.hover-item {
+  position: relative;
+  width: 100px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Optional: for rounded corners */
+}
+
+/* Hover effect */
+.hover-item:hover {
+  background-color: rgba(122, 113, 113, 0.15); /* Darker background on hover */
+  cursor: pointer;
+}
+
+.hover-highlight {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
