@@ -1944,6 +1944,7 @@ section,
   flex: 0 0 33%;  /* Ensures each column takes up 1/3rd of the width */
   position: relative; /* Needed for absolute positioning of hover elements */
   padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Fix the size of the hover item box */
