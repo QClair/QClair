@@ -1950,7 +1950,7 @@ section,
 .hover-item {
   position: relative;
   width: 100px; /* Fixed width */
-  height: 180px; /* Fixed height */
+  height: 150px; /* Fixed height */
   padding: 10px;
   background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
   text-align: center;
