@@ -774,7 +774,7 @@ section,
   overflow: clip;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 
   section,
   .section {
@@ -899,17 +899,6 @@ section,
 }
 
 @media (max-width: 768px) {
-
-
-  .hero h2 {
-    font-size: 30px;
-    max-width: 100%;
-  }
-  .hover-item h2 {
-    font-size: 2rem; /* Increase font size for larger screens */
-  }
-
-  @media (max-width: 600px) {
 
 
   .hero h2 {
@@ -1952,7 +1941,7 @@ section,
 }
 
 .hover-item:hover .hover-highlight {
-  color: #4AAFEE; /* Blue color when hovered */
+  color:  #4AAFEE; /* Gold color when hovered */
 }
 
 /* Quote styling to appear on top of image */
