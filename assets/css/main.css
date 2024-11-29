@@ -160,8 +160,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 60px;
+  margin-right: 2px;
 }
 
 .header .logo h1 {
@@ -866,7 +866,7 @@ section,
 
 .hero .carousel-container {
   position: absolute;
-  inset: 90px 64px 64px 64px;
+  inset: 90px 64px 64px 39px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -899,12 +899,19 @@ section,
 }
 
 @media (max-width: 768px) {
+
+
   .hero h2 {
     font-size: 30px;
+    max-width: 100%;
   }
   .hover-item h2 {
     font-size: 2rem; /* Increase font size for larger screens */
   }
+
+
+
+
 }
 
 .hero p {
@@ -1951,14 +1958,31 @@ section,
   z-index: 2; /* Ensure the quote is above the image */
   white-space: nowrap; /* Prevent wrapping of the text */
   overflow: hidden; /* Hide overflow content */
-  text-overflow: ellipsis; /* Add ellipsis if the text overflows */
+  text-overflow: break-word; /* Add ellipsis if the text overflows */
 }
 
 .quote {
   margin: 0;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 
+@media screen and (max-width: 600px) {
+  p.quote {
+      font-size: 9px; /* Smaller font size for small screens */
+      text-align: left;
+       
+      overflow-wrap: break-word;
+  }
+
+  .quote-overlay {
+    right: 20px; /* Adjust positioning for smaller screens */
+    bottom: 40px; /* Adjust positioning for smaller screens */
+    font-size: 0.75rem; /* Reduce font size for small screens */
+    padding: 10px; /* Smaller padding for compact design */
+    max-width: 100%; /* Further restrict width */
+  }
+}
 
 /* Ensure the columns inside the carousel item take full width and align in a row */
 .three-columns {
@@ -1971,16 +1995,17 @@ section,
 .column {
   flex: 0 0 33%;  /* Ensures each column takes up 1/3rd of the width */
   position: relative; /* Needed for absolute positioning of hover elements */
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
 }
+
 
 /* Fix the size of the hover item box */
 .hover-item {
   position: relative;
   width: 100px; /* Fixed width */
   height: 150px; /* Fixed height */
-  padding: 10px;
+  padding: 2px;
   background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
   text-align: center;
   overflow: hidden;
