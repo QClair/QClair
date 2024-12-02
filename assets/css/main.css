@@ -1985,19 +1985,9 @@ section,
 }
 
 /* Ensure the columns inside the carousel item take full width and align in a row */
-.three-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
 
-/* Ensure each column has a fixed size */
-.column {
-  flex: 0 0 33%;  /* Ensures each column takes up 1/3rd of the width */
-  position: relative; /* Needed for absolute positioning of hover elements */
-  padding: 10px;
-  box-sizing: border-box;
-}
+
+
 
 
 /* Fix the size of the hover item box */
@@ -2028,3 +2018,98 @@ section,
   font-weight: bold;
 }
 
+
+/* Create a two-column layout */
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* First Parent Column (33% width) with heading and two child columns stacked vertically */
+.first-column {
+  flex: 0 0 33%; /* 33% width */
+  padding: 10px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.first-column .parent-heading_1 {
+  font-size: 48px;
+  color: #fff; /* White color for heading */
+  margin-bottom: 40px;
+  margin-left: 110px; /* Center the parent heading */
+}
+
+.child-columns_1 {
+  display: flex;
+  flex-direction: column; /* Stack child columns vertically */
+  align-items: center; /* Center child columns */
+}
+
+
+/* Hover Effect for First Column Child Items */
+.child-column_1:hover {
+  background-color: rgba(0, 180, 255, 0.2); /* Light cyan background on hover */
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+  border-radius: 8px; /* Optional: Add rounded corners on hover */
+}
+
+.child-column_1 {
+  margin-top: 15px;
+  margin-bottom: 25px; /* Space between stacked child columns */
+  text-align: center; /* Center child column headings */
+}
+
+.child-column_1 h3 {
+  font-size: 32px;
+  color: #f0f0f0; /* Light color for subheadings */
+  text-align: center; /* Center the subheading */
+}
+
+/* Second Parent Column (66% width) with heading and three equally spaced child columns */
+.second-column {
+  flex: 0 0 66%; /* 66% width */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.second-column .parent-heading_2 {
+  font-size: 48px;
+  color: #fff; /* White color for heading */
+  margin-bottom: 70px;
+  margin-left: 275px;   /* Add margin on the left */
+  /* Center the parent heading */
+}
+
+.child-columns_2 {
+  display: flex;
+  justify-content: space-between; /* Spread out child columns equally */
+  gap: 5px;/* Space between the child columns */
+  flex-direction: row;
+}
+
+/* Hover Effect for Second Column Child Items */
+.child-column_2:hover {
+  background-color: rgba(0, 180, 255, 0.2); /* Light cyan background on hover */
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+  border-radius: 8px; /* Optional: Add rounded corners on hover */
+}
+
+.child-column_2 {
+  flex: 0 0 32%; /* Each child column takes up 32% width */
+  text-align: center; /* Center child column headings */
+}
+
+.child-column_2 h3 {
+  font-size: 32px;
+  color: #f0f0f0; /* Light color for subheadings */
+  text-align: center; /* Center the subheading */
+}
+
+/* Optional: Add styling for vertical divider if needed */
+.vertical-divider {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 7px;
+}
