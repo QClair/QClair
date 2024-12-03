@@ -2242,7 +2242,11 @@ section,
 
 /* Extra Small Mobile Screen (Below 480px) */
 @media (max-width: 480px) {
-  .first-column .parent-heading_1,
+  .first-column .parent-heading_1
+   {
+    font-size: 24px; /* Further reduce the font size */
+  }
+
   .second-column .parent-heading_2 {
     font-size: 20px; /* Further reduce the font size */
   }
