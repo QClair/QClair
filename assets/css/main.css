@@ -876,6 +876,11 @@ section,
   color: #fff;
 }
 
+.carousel-container p
+{
+  font-size: 20px;
+}
+
 
 
 
@@ -1949,7 +1954,7 @@ section,
   position: absolute;
   right: 385px; /* 20px from the right edge of the carousel */
   bottom: 20px; /* 20px from the bottom edge of the carousel */
-  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+  
   color: #fff; /* White text */
   padding: 15px; /* Padding around the text for better readability */
   font-size: 1.25rem; /* Font size */
@@ -2028,7 +2033,7 @@ section,
 
 /* First Parent Column (33% width) with heading and two child columns stacked vertically */
 .first-column {
-  flex: 0 0 33%; /* 33% width */
+  flex: 0 50%;
   padding: 10px;
   box-sizing: border-box;
   flex-direction: row;
@@ -2038,7 +2043,7 @@ section,
   font-size: 48px;
   color: #fff; /* White color for heading */
   margin-bottom: 40px;
-  margin-left: 110px; /* Center the parent heading */
+  margin-left: 170px; /* Center the parent heading */
 }
 
 .child-columns_1 {
@@ -2053,6 +2058,7 @@ section,
   background-color: rgba(0, 180, 255, 0.2); /* Light cyan background on hover */
   transform: scale(1.05); /* Slightly enlarge the box on hover */
   border-radius: 8px; /* Optional: Add rounded corners on hover */
+  width: 50%;
 }
 
 .child-column_1 {
@@ -2069,24 +2075,28 @@ section,
 
 /* Second Parent Column (66% width) with heading and three equally spaced child columns */
 .second-column {
-  flex: 0 0 66%; /* 66% width */
-  padding: 10px;
+  flex: 0  50%; 
+  padding: 1px;
   box-sizing: border-box;
+  flex-direction: row;
 }
 
 .second-column .parent-heading_2 {
   font-size: 48px;
   color: #fff; /* White color for heading */
   margin-bottom: 70px;
-  margin-left: 235px;   /* Add margin on the left */
+  margin-left: 75px;
+  white-space: nowrap;
+  
   /* Center the parent heading */
 }
 
 .child-columns_2 {
   display: flex;
   justify-content: space-between; /* Spread out child columns equally */
-  gap: 5px;/* Space between the child columns */
-  flex-direction: row;
+  gap: 25px;/* Space between the child columns */
+  flex-direction: column;
+  
 }
 
 /* Hover Effect for Second Column Child Items */
@@ -2094,10 +2104,12 @@ section,
   background-color: rgba(0, 180, 255, 0.2); /* Light cyan background on hover */
   transform: scale(1.05); /* Slightly enlarge the box on hover */
   border-radius: 8px; /* Optional: Add rounded corners on hover */
+  width: 55%;
+  margin-left: 210px;
 }
 
 .child-column_2 {
-  flex: 0 0 32%; /* Each child column takes up 32% width */
+  flex: 0 100%; /* Each child column takes up 32% width */
   text-align: center; /* Center child column headings */
 }
 
