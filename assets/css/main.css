@@ -2146,3 +2146,110 @@ section,
   border-radius: 10px; /* Optional: adds rounded corners */
 }
 
+
+/* Tablet Screen (768px to 1024px) */
+@media (max-width: 1024px) {
+  .two-columns {
+    flex-direction: column; /* Stack the columns vertically */
+    align-items: center; /* Center-align the columns */
+  }
+
+  .first-column,
+  .second-column {
+    flex: 0 100%; /* Full width for each column */
+    padding: 20px;
+  }
+
+  .first-column .parent-heading_1,
+  .second-column .parent-heading_2 {
+    margin-left: 0;
+    font-size: 36px; /* Slightly smaller font size for headings */
+  }
+
+  .child-columns_1,
+  .child-columns_2 {
+    flex-direction: column; /* Stack child columns vertically */
+  }
+
+  .child-column_1,
+  .child-column_2 {
+    width: 100%; /* Full width for child columns */
+  }
+
+  .child-column_1 h3,
+  .child-column_2 h3 {
+    font-size: 28px; /* Smaller subheading font */
+  }
+}
+
+/* Mobile Screen (Below 768px) */
+@media (max-width: 768px) {
+  .first-column,
+  .second-column {
+    flex: 0 100%; /* Full width for each column */
+    padding: 35px;
+    gap: 15px;
+  }
+
+  .first-column .parent-heading_1 {
+    font-size: 28px; /* Even smaller font size for very small screens */
+    margin-left: 0;
+    margin-bottom:25px;
+  }
+
+  .second-column .parent-heading_2 {
+    font-size: 26px; /* Even smaller font size for very small screens */
+    margin-left: 0;
+    margin-bottom:25px;
+  }
+
+  .child-columns_1,
+  .child-columns_2 {
+    flex-direction: column; /* Stack child columns vertically */
+    gap: 15px;
+  }
+
+  .child-column_1,
+  .child-column_2 {
+    width: 100%;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .child-column_1 h3,
+  .child-column_2 h3 {
+    font-size: 20px; /* Adjust subheading font size for small screens */
+  }
+
+  .child-column_1:hover {
+    background-color: rgba(0, 180, 255, 0.2); /* Light cyan background on hover */
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    border-radius: 8px; /* Optional: Add rounded corners on hover */
+    width: 80%;
+  }
+
+  .child-column_2:hover {
+    background-color: rgba(0, 180, 255, 0.2); /* Light cyan background on hover */
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    border-radius: 8px; /* Optional: Add rounded corners on hover */
+    width: 55%;
+    margin-left: 85px;
+  }
+
+
+}
+
+/* Extra Small Mobile Screen (Below 480px) */
+@media (max-width: 480px) {
+  .first-column .parent-heading_1,
+  .second-column .parent-heading_2 {
+    font-size: 20px; /* Further reduce the font size */
+  }
+
+  .child-column_1 h3,
+  .child-column_2 h3 {
+    font-size: 16px; /* Smaller subheading font size */
+  }
+
+}
