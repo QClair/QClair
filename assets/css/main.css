@@ -2056,7 +2056,7 @@ section,
 }
 
 .child-column_1 {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 25px; /* Space between stacked child columns */
   text-align: center; /* Center child column headings */
 }
@@ -2078,7 +2078,7 @@ section,
   font-size: 48px;
   color: #fff; /* White color for heading */
   margin-bottom: 70px;
-  margin-left: 275px;   /* Add margin on the left */
+  margin-left: 235px;   /* Add margin on the left */
   /* Center the parent heading */
 }
 
