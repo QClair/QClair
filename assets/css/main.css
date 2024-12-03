@@ -2023,7 +2023,6 @@ section,
   font-weight: bold;
 }
 
-
 /* Create a two-column layout */
 .two-columns {
   display: flex;
@@ -2146,3 +2145,4 @@ section,
   object-fit: cover; /* Ensures images maintain proportions while filling the container */
   border-radius: 10px; /* Optional: adds rounded corners */
 }
+
