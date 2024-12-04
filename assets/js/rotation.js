@@ -1,45 +1,52 @@
 const imageContainer = document.querySelector('.image-container');
 
-// Define rotation ranges and corresponding speeds
-const rotationRanges = [
-  { start: 0, end: 80, speed: 1 },  // 0 - 80 degrees, slow speed
-  { start: 80, end: 100, speed: 1 },  // 80 - 100 degrees, fast speed
-  { start: 100, end: 170, speed: 1 },  // 100 - 170 degrees, slow speed
-  { start: 170, end: 190, speed: 1 },  // 170 - 190 degrees, fast speed
-  { start: 190, end: 260, speed: 1 },  // 190 - 260 degrees, slow speed
-  { start: 260, end: 280, speed: 1 },  // 260 - 280 degrees, fast speed
-  { start: 280, end: 350, speed: 1 },  // 280 - 350 degrees, slow speed
-  { start: 350, end: 360, speed: 1 },  // 350 - 360 degrees, fast speed
+// Define visibility ranges
+const visibilityRanges = [
+  { start: 80, end: 100 },   // Invisible between 80-100 degrees
+  { start: 170, end: 190 },  // Invisible between 170-190 degrees
+  { start: 260, end: 280 },  // Invisible between 260-280 degrees
+  { start: 350, end: 360 },  // Invisible between 350-360 degrees
 ];
 
-// Initialize rotation at 0 degrees
-let currentRotation = 0;
+const rotationSpeed = 5; // Degrees per frame
+const frameInterval = 10; // Interval in milliseconds
 
-// Function to update rotation speed based on the current rotation angle
-function updateRotationSpeed() {
-  // Find the current range for the rotation angle
-  for (let i = 0; i < rotationRanges.length; i++) {
-    const range = rotationRanges[i];
-    // If current rotation is within the range, adjust speed
-    if (currentRotation >= range.start && currentRotation < range.end) {
-      const animationDuration = (range.speed * 2) + 's'; // Adjust speed dynamically
-      imageContainer.style.animationDuration = animationDuration; // Update animation duration
-      break; // Exit loop once we find the matching range
+// Retrieve the last rotation angle from localStorage, or initialize it to 0
+let currentRotation = parseFloat(localStorage.getItem('currentRotation')) || 0;
+
+// Function to check if the current angle is in an invisible range
+function isInvisible(angle) {
+  for (let range of visibilityRanges) {
+    if (angle >= range.start && angle < range.end) {
+      return true; // Angle is in an invisible range
     }
   }
+  return false; // Angle is visible
 }
 
-// Function to update rotation angle and apply the animation
+// Function to update rotation and visibility
 function updateRotation() {
-  currentRotation += 1; // Increment rotation angle
+  currentRotation += rotationSpeed; // Increment rotation angle by rotationSpeed
 
   if (currentRotation >= 360) {
     currentRotation = 0; // Reset rotation if 360 degrees is reached
   }
 
-  updateRotationSpeed(); // Adjust speed based on the range
-  imageContainer.style.transform = `rotateY(${currentRotation}deg)`; // Apply the new rotation
+  // Save the current rotation in localStorage
+  localStorage.setItem('currentRotation', currentRotation);
+
+  // Check if the current rotation angle is in an invisible range
+  if (isInvisible(currentRotation)) {
+    imageContainer.style.opacity = 0; // Hide the image
+  } else {
+    imageContainer.style.opacity = 0.25; // Show the image
+  }
+
+  // Apply the rotation
+  imageContainer.style.transform = `rotateY(${currentRotation}deg)`;
 }
 
-// Call updateRotation every frame (60fps)
-setInterval(updateRotation, 16); // Update rotation at approximately 60fps
+// Call updateRotation at the specified interval
+setInterval(updateRotation, frameInterval); // Faster updates for smoother animation
+
+
