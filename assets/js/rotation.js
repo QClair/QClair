@@ -1,3 +1,5 @@
+
+
 const imageContainer = document.querySelector('.image-container');
 
 // Define visibility ranges
@@ -48,5 +50,3 @@ function updateRotation() {
 
 // Call updateRotation at the specified interval
 setInterval(updateRotation, frameInterval); // Faster updates for smoother animation
-
-
