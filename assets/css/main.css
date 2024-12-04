@@ -2192,7 +2192,7 @@ section,
   }
 
   .first-column .parent-heading_1 {
-    font-size: 28px; /* Even smaller font size for very small screens */
+    font-size: 30px; /* Even smaller font size for very small screens */
     margin-left: 0;
     margin-bottom:25px;
   }
@@ -2325,3 +2325,32 @@ section,
     opacity: 0.75; /* Final opacity */
   }
 }
+
+
+.bounce-text {
+  font-size: 49px;
+}
+
+.bounce-text_2 {
+  font-size:25px;
+}
+
+
+@media (max-width: 576px) {
+
+  .carousel-container-im {
+    inset: 415px 5px 0px 0px;
+
+  }
+  .bounce-text {
+    font-size: 25px; /* Further reduce font size for very small screens */
+  }
+
+  .bounce-text_2 {
+    font-size: 20px;
+    margin-left: 1px; /* Make the paragraph text smaller */
+  }
+
+
+}
+
