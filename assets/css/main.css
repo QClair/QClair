@@ -2257,3 +2257,27 @@ section,
   }
 
 }
+
+
+
+/* Define the bounce animation */
+<!-- @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Normal position */
+  }
+  50% {
+    transform: translateY(-25px); /* Move up slightly */
+  }
+
+}
+
+/* Apply the bounce animation to elements with the 'bounce-text' class */
+.bounce-text {
+  animation: bounce 4s ease-in-out infinite !important;
+}
+
+
+
+.bounce-text_2 {
+  animation: bounce 4s ease-in-out infinite !important;
+}
