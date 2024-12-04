@@ -2266,7 +2266,7 @@ section,
     transform: translateY(0); /* Normal position */
   }
   50% {
-    transform: translateY(-25px); /* Move up slightly */
+    transform: translateY(-60px); /* Move up slightly */
   }
 
 }
@@ -2280,4 +2280,48 @@ section,
 
 .bounce-text_2 {
   animation: bounce 4s ease-in-out infinite !important;
+}
+
+
+.carousel-container-im {
+  position: relative;
+  inset: 400px 64px 64px 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  z-index: 3;
+  color: #fff;
+}
+
+
+
+
+
+
+.image-container {
+  position: relative;
+  display: flex;
+  left:1550px;
+  top:-100px;
+  max-width: 15%;
+  height: 100%;   /* Limit the width of the text container */ 
+  z-index: 4;
+  opacity: 0.25;
+  animation: rotateYAnimation 100s linear infinite;
+  transition: transform 100s ease-in-out;  /* Apply the animation */
+  perspective: 800px;
+
+}
+
+@keyframes rotateYAnimation {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 0.25; /* Initial opacity */
+  }
+  100% {
+    transform: rotateY(360deg);
+    opacity: 0.25; /* Final opacity */
+  }
 }
