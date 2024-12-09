@@ -2295,7 +2295,7 @@ section,
     transform: translateY(0); /* Normal position */
   }
   50% {
-    transform: translateY(-60px); /* Move up slightly */
+    transform: translateY(-15px); /* Move up slightly */
   }
 
 }
@@ -2332,28 +2332,14 @@ section,
 .image-container {
   position: relative;
   display: flex;
-  left:1550px;
-  top:-100px;
-  max-width: 15%;
-  height: 100%;   /* Limit the width of the text container */ 
-  z-index: 4;
-  opacity: 0.25;
-  animation: rotateYAnimation 10s linear infinite;
-  transition: transform 10s ease-in-out;  /* Apply the animation */
-  perspective: 800px;
-
+  left:1150px;
+  top:-250px;
+  max-width: 1250px;
+  height: 1400px;   /* Limit the width of the text container */ 
+  z-index: 2;
 }
 
-@keyframes rotateYAnimation {
-  0% {
-    transform: rotateY(0deg);
-    opacity: 0.75; /* Initial opacity */
-  }
-  100% {
-    transform: rotateY(360deg);
-    opacity: 0.75; /* Final opacity */
-  }
-}
+
 
 
 .bounce-text {
@@ -2421,3 +2407,9 @@ section,
 
 }
 
+.rotated-gif {
+    transform: rotate(-67.5deg); /* Rotate the GIF by -45 degrees */
+    display: block;
+    margin: 0 auto; /* Center the GIF (optional) */
+  }
+  
